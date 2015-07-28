@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   post "/pokedex/new", to: "pokemon#new"
   get "/pokedex/all", to: "pokemon#index"
 
-
 end
