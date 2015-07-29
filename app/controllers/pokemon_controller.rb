@@ -2,7 +2,7 @@ class PokemonController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    render json: Pokemon.all
+    render json: Pokemon.select("name, types, image_uri, resource_uri").all
   end
 
   def new
